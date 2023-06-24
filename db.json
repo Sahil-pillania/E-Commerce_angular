@@ -11,6 +11,18 @@
       "email": "sahil2@gmail.com",
       "password": "123456",
       "id": 2
+    },
+    {
+      "name": "Sahil3",
+      "password": "123456",
+      "email": "sahil3@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Sahil4",
+      "password": "123456",
+      "email": "sahil4@gmail.com",
+      "id": 4
     }
   ]
 }
