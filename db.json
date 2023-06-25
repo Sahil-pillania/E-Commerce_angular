@@ -23,18 +23,35 @@
       "password": "123456",
       "email": "sahil4@gmail.com",
       "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "Mobiles",
+      "Color": "black",
+      "image": "https://www.jiomart.com/images/product/original/493177751/apple-iphone-14-128-gb-red-digital-o493177751-p593687927-0-202209091829.jpeg?im=Resize=(420,420)",
+      "description": "New Iphone by Apple",
+      "id": 1
     },
     {
-      "name": "Sahil5",
-      "password": "123456",
-      "email": "sahil5@gmail.com",
-      "id": 5
+      "name": "Samsung galaxy S23 ultra",
+      "price": "100000",
+      "category": "Mobiles",
+      "color": "Black",
+      "description": "A SAMSUNG Product",
+      "image": "https://cdn.shopify.com/s/files/1/1684/4603/products/Samsung-Galaxy-s23-Ultra_Phantom-Black_600x.png?v=1676379953",
+      "id": 2
     },
     {
-      "name": "Sahil6",
-      "password": "123456",
-      "email": "sahil6@gmail.com",
-      "id": 6
+      "name": "Samsung galaxy S23 ultra",
+      "price": "100000",
+      "category": "Mobiles",
+      "color": "White",
+      "description": "A SAMSUNG product",
+      "image": "https://images.fonearena.com/blog/wp-content/uploads/2023/02/Samsung-S23-Ultra-Fonearena-1.jpg",
+      "id": 3
     }
   ]
 }
