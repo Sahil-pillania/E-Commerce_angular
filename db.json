@@ -48,10 +48,19 @@
       "name": "Samsung galaxy S23 ultra",
       "price": "100000",
       "category": "Mobiles",
-      "color": "White",
-      "description": "A SAMSUNG product",
+      "color": "Black",
+      "description": "a SAMSUNG product",
       "image": "https://images.fonearena.com/blog/wp-content/uploads/2023/02/Samsung-S23-Ultra-Fonearena-1.jpg",
       "id": 3
+    },
+    {
+      "name": "Samsung galaxy S23 ultra",
+      "price": "100000",
+      "category": "Mobiles",
+      "color": "Black",
+      "description": "a SAMSUNG product",
+      "image": "https://images.fonearena.com/blog/wp-content/uploads/2023/02/Samsung-S23-Ultra-Fonearena-1.jpg",
+      "id": 4
     }
   ]
 }

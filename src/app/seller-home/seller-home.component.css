@@ -1,7 +1,9 @@
 table {
   text-align: left;
   color: blueviolet;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
 }
 img {
   height: 100px;
@@ -9,7 +11,14 @@ img {
 }
 table td,
 table th {
-  border: 1px solid blueviolet;
+  /* border: 1px solid blueviolet; */
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 10px;
   min-width: 160pxs;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
