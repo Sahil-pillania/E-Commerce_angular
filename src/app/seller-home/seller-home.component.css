@@ -22,3 +22,6 @@ table th {
   flex-direction: column;
   align-items: center;
 }
+.adjust-update-link {
+  margin-left: 10px;
+}
