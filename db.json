@@ -48,7 +48,7 @@
       "name": "Samsung galaxy S23 ultra",
       "price": "100000",
       "category": "Mobiles",
-      "color": "Black",
+      "color": "White",
       "description": "a SAMSUNG product",
       "image": "https://images.fonearena.com/blog/wp-content/uploads/2023/02/Samsung-S23-Ultra-Fonearena-1.jpg",
       "id": 3
@@ -61,6 +61,24 @@
       "description": "a SAMSUNG product",
       "image": "https://images.fonearena.com/blog/wp-content/uploads/2023/02/Samsung-S23-Ultra-Fonearena-1.jpg",
       "id": 4
+    },
+    {
+      "name": "Truck",
+      "price": "Toy",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": 6
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": 7
     }
   ]
 }
