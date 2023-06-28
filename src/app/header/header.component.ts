@@ -25,14 +25,17 @@ export class HeaderComponent {
             let sellerStore = localStorage.getItem('seller');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
-          } else if (localStorage.getItem('user')) {
-            let userStore = localStorage.getItem('user');
-            let userData = userStore && JSON.parse(userStore);
-            this.userName = userData.name;
-            this.menuType = 'user';
-          } else {
-            this.menuType = 'default';
           }
+        } else if (localStorage.getItem('user')) {
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore);
+          this.userName = userData.name;
+          console.log(this.menuType);
+
+          this.menuType = 'user';
+          console.log(this.menuType);
+        } else {
+          this.menuType = 'default';
         }
       }
     });
