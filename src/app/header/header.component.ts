@@ -53,6 +53,9 @@ export class HeaderComponent {
     console.warn(val);
     this.route.navigate([`search/${val}`]);
   }
+  redirectToDetails(id: number) {
+    this.route.navigate(['/details/' + id]);
+  }
 
   logout() {
     localStorage.removeItem('seller');
