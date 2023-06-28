@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 export class UserAuthComponent implements OnInit {
   constructor(private user: UserService) {}
   showLogin: boolean = true;
+  authError: string = '';
   ngOnInit(): void {
     this.user.userAuthReload();
   }
@@ -19,6 +20,12 @@ export class UserAuthComponent implements OnInit {
   }
   login(data: login) {
     console.warn(data);
+    this.user.invalidUserAuth.subscribe((result) => {
+      console.warn(result);
+      if (result) {
+        this.authError = 'User not found';
+      }
+    });
     this.user.userLogin(data);
   }
   openSignUp() {
