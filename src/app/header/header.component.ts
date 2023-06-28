@@ -45,8 +45,13 @@ export class HeaderComponent {
       });
     }
   }
+
   hideSearch() {
     this.searchResult = undefined;
+  }
+  submitSearch(val: string) {
+    console.warn(val);
+    this.route.navigate([`search/${val}`]);
   }
 
   logout() {
