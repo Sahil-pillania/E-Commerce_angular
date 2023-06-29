@@ -75,4 +75,14 @@ export class ProductService {
   addToCart(cartData: cart) {
     return this.http.post('http://localhost:3000/cart', cartData);
   }
+  removeToCart(cartId: number) {
+    return this.http.delete('http://localhost:3000/cart/' + cartId);
+  }
+  currentCart() {
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    return this.http.get<cart[]>(
+      'http://localhost:3000/cart?userId=' + userData.id
+    );
+  }
 }

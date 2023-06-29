@@ -34,6 +34,7 @@ export class HeaderComponent {
           console.log(this.menuType);
 
           this.menuType = 'user';
+          this.product.getCartList(userData.id);
           console.log(this.menuType);
         } else {
           this.menuType = 'default';
