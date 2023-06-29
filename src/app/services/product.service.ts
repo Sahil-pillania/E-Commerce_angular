@@ -43,12 +43,24 @@ export class ProductService {
     let localCart = localStorage.getItem('localCart');
     if (!localCart) {
       localStorage.setItem('localCart', JSON.stringify([data]));
+      this.cartData.emit([data]);
     } else {
       cartData = JSON.parse(localCart);
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
       this.cartData.emit(cartData);
     }
+  }
+  getCartList(userId: number) {
+    return this.http
+      .get<product[]>('http://localhost:3000/cart?userId=' + userId, {
+        observe: 'response',
+      })
+      .subscribe((result) => {
+        if (result && result.body) {
+          this.cartData.emit(result.body);
+        }
+      });
   }
 
   removeItemFromCart(productId: number) {

@@ -18,6 +18,7 @@ export class ProductDetailsComponent implements OnInit {
   ) {}
   productQuantity: number = 1;
   removeCart = false;
+  cartData: product | undefined;
   ngOnInit(): void {
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
     console.warn(productId);
@@ -36,6 +37,22 @@ export class ProductDetailsComponent implements OnInit {
           } else {
             this.removeCart = false;
           }
+        }
+        let user = localStorage.getItem('user');
+        if (user) {
+          let userId = user && JSON.parse(user).id;
+          this.product.getCartList(userId);
+
+          this.product.cartData.subscribe((result) => {
+            let item = result.filter(
+              (item: product) =>
+                productId?.toString() === item.productId?.toString()
+            );
+            if (item.length) {
+              this.cartData = item[0];
+              this.removeCart = true;
+            }
+          });
         }
       });
   }
@@ -70,6 +87,8 @@ export class ProductDetailsComponent implements OnInit {
         delete cartData.id;
         this.product.addToCart(cartData).subscribe((result) => {
           if (result) {
+            this.product.getCartList(userId);
+            this.removeCart = true;
             alert('Product is added in cart');
           }
         });
