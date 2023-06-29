@@ -106,5 +106,19 @@
       "password": "123456",
       "id": 4
     }
+  ],
+  "cart": [
+    {
+      "name": "Samsung galaxy S23 ultra",
+      "price": "100000",
+      "category": "Mobiles",
+      "color": "Black",
+      "description": "A SAMSUNG Product",
+      "image": "https://cdn.shopify.com/s/files/1/1684/4603/products/Samsung-Galaxy-s23-Ultra_Phantom-Black_600x.png?v=1676379953",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 4,
+      "id": 1
+    }
   ]
 }
