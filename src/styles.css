@@ -27,6 +27,7 @@ body {
 }
 .error-p {
   color: red;
+  text-align: center;
 }
 .message-p {
   color: green;

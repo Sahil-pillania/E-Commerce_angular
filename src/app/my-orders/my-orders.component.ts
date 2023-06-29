@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { order } from 'src/data-type';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-my-orders',
@@ -6,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-orders.component.css'],
 })
 export class MyOrdersComponent implements OnInit {
-  constructor() {}
+  orderData: order[] | undefined;
+  constructor(private product: ProductService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.product.orderList().subscribe((result) => {
+      this.orderData = result;
+    });
+  }
 }
