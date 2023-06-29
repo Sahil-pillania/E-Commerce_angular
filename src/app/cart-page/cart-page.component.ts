@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { cart, priceSummary } from 'src/data-type';
 import { ProductService } from '../services/product.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
@@ -15,7 +16,7 @@ export class CartPageComponent implements OnInit {
     delivery: 0,
     total: 0,
   };
-  constructor(private product: ProductService) {}
+  constructor(private product: ProductService, private router: Router) {}
 
   ngOnInit(): void {
     this.product.currentCart().subscribe((result) => {
@@ -35,5 +36,8 @@ export class CartPageComponent implements OnInit {
 
       console.warn(this.priceSummary);
     });
+  }
+  checkout() {
+    this.router.navigate(['/checkout']);
   }
 }
